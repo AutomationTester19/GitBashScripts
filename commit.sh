@@ -6,6 +6,5 @@ commit_messgae = "$1"
 branch_name = "$branchname"
 git add .
 git commit -m "$1"
-git push -u origin "$branchname"
-
+git push 
 
