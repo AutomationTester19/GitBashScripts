@@ -24,9 +24,5 @@ else
 		git status
 fi
 
-if[ -z "$branchname" = "[:missing ']"]
-then
-     echo "User Already Committed"
-fi
 
 
