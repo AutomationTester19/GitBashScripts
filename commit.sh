@@ -21,6 +21,12 @@ then
         echo "User Cannot Commit the file to empty branch"
 else 
         echo "File Committed Succesfully, Check the GitHub Repo"
+		git status
 fi
 
-git status
+if[ -z "$branchname" = "[:missing ']"]
+then
+     echo "User Already Committed"
+fi
+
+
