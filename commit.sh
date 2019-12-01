@@ -5,8 +5,8 @@ read -p " commit_messgae       : "    desc
 
 git add .
 git commit -m "$desc"
-read -p "Enter branch name    : "    branchname
 
+read -p "Enter branch name    : "    branchname
 if [ -z "$branchname" ];
 then
 echo "User Cannot Commit to $branchname as it is empty"
@@ -16,5 +16,10 @@ fi
 
 git push -u origin "$branchname"
 
-echo "Commited File SuccessFully, Check the GitHub Repo"
+if [ -z "$branchname"]
+then
+        echo "User Cannot Commit the file to empty branch"
+else 
+        echo "File Committed Succesfully, Check the GitHub Repo"
+fi
 
