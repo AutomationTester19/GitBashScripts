@@ -1,6 +1,7 @@
 #!/bin/sh
 
-
+ ####### commit text & branch name is mandatory ####
+ 
 read -p " CommitText       : "    desc
 
 if [ -z "$desc" ]
