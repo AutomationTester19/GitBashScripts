@@ -7,7 +7,7 @@ git add .
 git commit -m "$desc"
 read -p "Enter branch name    : "    branchname
 
-if [ -n "$branchname" ];
+if [ -z "$branchname" ];
 then
 echo "User Cannot Commit to $branchname as it is empty"
 else 
