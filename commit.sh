@@ -15,7 +15,7 @@ read -p "Enter Branch name    : "    branchname
 
 if [ -z "$branchname" ];
 then
-echo "User Cannot Commit to empty branch"
+echo "User Cannot Commit to Empty Branch"
 else
 echo "User Entered Branch Name And Branch Name is " $branchname
 
