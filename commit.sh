@@ -2,7 +2,7 @@
 
 
 
-commit_messgae = "$1"
+read -p "commit_messgae:  " desc
 git add .
-git commit -m "$1"
+git commit -m "$desc"
 echo $"Test Completed"
