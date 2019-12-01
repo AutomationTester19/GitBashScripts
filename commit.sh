@@ -15,12 +15,12 @@ else
 echo "User Entered Branch Name And Branch Name is " $branchname
 fi
 
-git push -u origin "$branchname"
 
 if [ -z "$branchname"]
 then
         echo "User Cannot Commit the file to empty branch"
 else 
+        git push -u origin "$branchname"
         echo "File Committed Succesfully, Check the GitHub Repo"
 		git status
 fi
