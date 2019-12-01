@@ -23,3 +23,4 @@ else
         echo "File Committed Succesfully, Check the GitHub Repo"
 fi
 
+git status
