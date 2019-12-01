@@ -1,12 +1,16 @@
 #!/bin/sh
 
 
-read -p " commit_messgae       : "    desc
+read -p " CommitText       : "    desc
 
+if [ -z "$desc" ]
+then 
+      echo "User Should Enter Text to Commit the File"
+else
 git add .
 git commit -m "$desc"
 
-read -p "Enter branch name    : "    branchname
+read -p "Enter Branch name    : "    branchname
 
 if [ -z "$branchname" ];
 then
@@ -23,3 +27,5 @@ fi
 
 
 
+
+fi
