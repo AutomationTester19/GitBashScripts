@@ -12,4 +12,5 @@ fi
 git add .
 git commit -m "$desc"
 git push -u origin "$branchname"
-echo "Commited File SuccessFully, Check the Git Hub Repo"
+echo "Commited File SuccessFully, Check the GitHub Repo"
+
