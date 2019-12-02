@@ -2,6 +2,11 @@
 
  ####### commit text & branch name is mandatory ####
  
+read -p "Enter Desired Path To Commit the file : " var
+
+cd "$var"
+
+
 read -p " CommitText       : "    desc
 
 if [ -z "$desc" ]
