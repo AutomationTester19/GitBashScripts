@@ -2,7 +2,7 @@
 
  ####### commit text & branch name is mandatory ####
  
-
+### First Read Description
 
 read -p " CommitText       : "    desc
 
