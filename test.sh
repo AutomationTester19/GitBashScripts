@@ -39,6 +39,6 @@ fi
 if [[ -z "$UPSTREAM"  ]]
 then
   echo "\n"
-  git push --all $MYREPO
+  git fetch $MYREPO
   git push --tags $MYREPO
 fi
